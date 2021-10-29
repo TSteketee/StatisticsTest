@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .tooltip-wrap {
+            position: relative;
+            background-color: rgba(0, 0, 0, 1);
+            color: white;
+            display: inline-block;
+            padding-left:10px;
+            padding-right: 10px;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .tooltip-wrap .tooltip-content {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 1);
+            padding: 20px;
+            color: white;
+            border-radius: 5px;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .tooltip-wrap:hover .tooltip-content {
+            transition: 0.3s;
+            visibility: visible;
+            opacity: 1;
+        }
+        .tooltip-wrap:hover{
+            transition: 0.3s;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+    <h1>{{question}}</h1>
+    <div class="tooltip-wrap">
+        <h2> Laat antwoord zien </h2>
+        <div class="tooltip-content">
+            <p>{{answer}}</p>
+        </div> 
+    </div>
+    <h2> 
+</body>
+</html>
